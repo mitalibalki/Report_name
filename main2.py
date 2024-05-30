@@ -35,7 +35,7 @@ st.markdown("Enter your information here:")
 
 # which report
 report_list = ['DAP Report', 'SIP Report']
-st.session_state['report_sample'] = st.selectbox('Which program are you writing this report for?', report_list, placeholder="Choose Report")
+st.session_state['report_sample'] = st.selectbox('Which program are you writing this report for?', report_list, index=None, placeholder="Choose Report")
 
 st.session_state['Context']['Title_of_Report'] = st.text_input('What is the Title of your report?', key='report_name',placeholder='[Report Title]')
 
@@ -43,7 +43,7 @@ st.session_state['Context']['Student_Name'] = st.text_input('What is your full n
 
 st.session_state['Context']['Student_Number'] = st.text_input('What is your student id number?', key='student_no',placeholder='[Student Number]')
 
-st.session_state['Context']['Program'] = st.selectbox('Which program are you writing this report for?', ["UG", "PG"], placeholder="[Program]")
+st.session_state['Context']['Program'] = st.selectbox('Which program are you writing this report for?', ["UG", "PG"], index=None, placeholder="[Program]")
 
 st.session_state['Context']['Year'] = st.text_input('Which year did you join in?', key='year',placeholder='[Year]')
 
