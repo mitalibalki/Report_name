@@ -34,8 +34,8 @@ report_dict = {'DAP Report':'DAP Sample report.docx',
 st.markdown("Enter your information here:")
 
 # which report
-report_sample = ['DAP Report', 'SIP Report']
-st.session_state['report_sample'] = st.selectbox('Which program are you writing this report for?', report_sample, placeholder="Choose Report")
+report_list = ['DAP Report', 'SIP Report']
+st.session_state['report_sample'] = st.selectbox('Which program are you writing this report for?', report_list, placeholder="Choose Report")
 
 st.session_state['Context']['Title_of_Report'] = st.text_input('What is the Title of your report?', key='report_name',placeholder='[Report Title]')
 
